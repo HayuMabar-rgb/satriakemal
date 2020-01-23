@@ -101,3 +101,9 @@ Route::get ('Tni/{Nama?}/{BB?}/{Umur?}' , function ($nama = null , $bb = null , 
     echo"umur anda adalah $umur";
     }
 });
+Route::get('testmodel/1', function() {
+    $post = App\Post::find(1);
+    $post->title = "Ciri Keluarga Sakinah";
+    $post->save();
+    return $post();  
+    });
