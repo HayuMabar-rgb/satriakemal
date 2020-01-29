@@ -105,3 +105,8 @@ Route::get ('Tni/{Nama?}/{BB?}/{Umur?}' , function ($nama = null , $bb = null , 
 Route::get('SATRIAKEMAL','LatihanController@halo');
 Route::get('tambah/{angka?}/{angka1?}','LatihanController@tambah');
 Route::get('loop','LatihanController@loop');
+
+// CRUD TABUNGAN
+Route::get('tabungan','TabunganController@index');
+Route::get('tabungan/{id}','TabunganController@show');
+Route::get('tabungan-tambah/{nis}/{nama}/{kelas}/{jml}','TabunganController@store');
