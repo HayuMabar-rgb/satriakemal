@@ -110,3 +110,6 @@ Route::get('loop','LatihanController@loop');
 Route::get('tabungan','TabunganController@index');
 Route::get('tabungan/{id}','TabunganController@show');
 Route::get('tabungan-tambah/{nis}/{nama}/{kelas}/{jml}','TabunganController@store');
+Route::get('pass','PracticeController@pass');
+Route::get('pass1','PracticeController@pass1');
+Route::get('pass-tabungan','PracticeController@pass2');
